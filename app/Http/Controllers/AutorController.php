@@ -86,5 +86,7 @@ class AutorController extends Controller
         $autor->delete();
         return redirect()->away('/autores')
             ->with('success', 'Autor criado com sucesso!');
+
+            
     }
 }
