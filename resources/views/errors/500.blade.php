@@ -8,7 +8,7 @@
 
  <div class="row">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mx-auto">
-        <h1>Erro 404 - Página não encontrada</h1>
+        <h1>Erro 500 - Falha de sistema</h1>
         <h3>Entre em contato com o administrador</h3>
     </div>
 
