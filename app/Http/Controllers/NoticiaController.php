@@ -56,7 +56,7 @@ class NoticiaController extends Controller
         Noticia::create($request->all());
         //redirecionar ou devolver uma mensagem para o cliente
         //return redirect()->route('noticias.index');
-        return redirect()->away('/noticias')->with('success', 'Noticia criada com sucesso!');
+        return redirect()->away('/admin/noticias')->with('success', 'Noticia criada com sucesso!');
     }
 
     /**
@@ -100,7 +100,7 @@ class NoticiaController extends Controller
         // }
           $noticia = Noticia::find($id);
         $noticia->update($request->all());
-        return redirect()->away('/noticias')
+        return redirect()->away('/admin/noticias')
             ->with('success', 'Noticia atualizada com sucesso!');
     }
 
@@ -117,7 +117,7 @@ class NoticiaController extends Controller
           $noticia = Noticia::find($id);
         $noticia->delete();
 
-        return redirect()->away('/noticias')
+        return redirect()->away('/admin/noticias')
             ->with('success', 'Noticia destruido com sucesso!');
     }
 }
