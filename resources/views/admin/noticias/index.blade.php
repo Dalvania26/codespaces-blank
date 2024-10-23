@@ -36,7 +36,7 @@
                     
                     
                     <td>
-                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data bs-target="#confirmDeleteModal" data-noicia-id="{{ $noticia->id }}">
+                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-noticia-id="{{ $noticia->id }}">
                                 <i class="bi bi-trash"></i>
 
                         </td>
@@ -56,7 +56,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id=" confirmDeleteModalLabel">Confirmar exclusão</h5>
+                <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar exclusão</h5>
                 <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
 
 
@@ -80,9 +80,9 @@
     var confirmDeleteModal = document.getElementById('confirmDeleteModal');
     confirmDeleteModal.addEventListener('show.bs.modal', function (event) { 
         var button = event.relatedTarget;
-        var noiciaId = button.getAttribute('data-noicia-id');
-        var deleteForm = document.getElementById('deleteForm');
-        form.action = '/admin/noticias/' + noiciaId;
+        var noticiaId = button.getAttribute('data-noticia-id');
+        var form = document.getElementById('deleteForm');
+        form.action = '/admin/noticias/' + noticiaId;
     });
 
 </script>
