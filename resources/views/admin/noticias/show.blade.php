@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('title',$noticia->titulo)
-@section('conteudo')
+@section('contet')
 <div>
     <h3>Titulo: {{$noticia->titulo}}.</h3>
     <h2>Titulo: {{$noticia->substitulo}}.</h2>
