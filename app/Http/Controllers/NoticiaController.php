@@ -84,7 +84,7 @@ class NoticiaController extends Controller
         $cadernos = Caderno::all();
         return view(
             'admin.noticias.edit',
-            compact('noticia', 'autores', 'cadernos')
+            compact('noticias', 'autores', 'cadernos')
         );
     }
 
