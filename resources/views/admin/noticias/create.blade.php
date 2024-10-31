@@ -12,7 +12,7 @@
             <!-- 'data'-->
             <div class="form-group mb-1">
                 <label for="data">Data da Noticia: </label>
-                <input type="date" id="data" name="data" value="{{old('data')}}" class="form-control @error('data') is-invalid @enderror">
+                <input type="date time-local" id="data" name="data" value="{{old('data')}}" class="form-control @error('data') is-invalid @enderror">
                 @if($errors->has('data'))
                 <div class="text-danger">{{$errors->first('data')}}
 
