@@ -79,7 +79,7 @@ class CadernoController extends Controller
     {
         //
         $caderno = Caderno::find($id);
-        if ($caderno->noticias()->count() > 0) {
+        if ($caderno->cadernos()->count() > 0) {
             return redirect()->away('/cadernos')
                 ->with('error', 'Caderno possui dependentes!');
         } else {
